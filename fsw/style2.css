@@ -1,0 +1,19 @@
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 10px; /* Espaçamento inferior entre os campos */
+  }
+  
+  /* Ajuste o estilo das etiquetas (labels) */
+  .form-label {
+    font-weight: bold;
+  }
+  
+  /* Remova a borda padrão dos campos de entrada quando focados */
+  .form-control:focus {
+    border-color: #007bff; /* Cor da borda quando o campo está focado (opcional) */
+    box-shadow: none; /* Remova a sombra ao focar (opcional) */
+  }

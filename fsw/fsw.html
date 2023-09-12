@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script src="https://kit.fontawesome.com/3202e063b7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!--Aqui estao as configs CSS-->
+<link rel="stylesheet" href="style.css">
+<title>Menu Personalizado</title>
+</head>
+
+<body>
+<!--Aqui esta o corpo da pagina-->
+
+    <header>
+        <nav class="nav-bar">
+        <div class="container">
+            <div class="logo"><img src="images/Sofisticão.png" width="90" height="95"></div>
+            <div class="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="menu">
+                <ul>
+                   <li class="menu-item"><a href="fsw.html" class="menu-link">Home</a></li>
+                   <li class="menu-item"><a href="produtos e servicos.html" class="menu-link">Produtos e Servicos</a></li>
+                   <li class="menu-item"><a href="agendamento.html" class="menu-link">Agendamento</a></li>
+                </ul>
+            </div>
+
+            <div class="carrinho">      
+                <button><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="conta">
+                <a href="cadastro.html">
+                    <button>
+                        <i class="fa-solid fa-user"></i> 
+                    </button>
+                </a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class= "icon" src="menu-bar.png"></button>
+            </div>
+
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="menu-item"><a href="fsw.html" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="produtos e servicos.html" class="menu-link">Produtos e Servicos</a></li>
+                    <li class="menu-item"><a href="agendamento.html" class="menu-link">Agendamento</a></li>
+                 </ul>
+            </div>
+
+           
+        </div>
+        </nav>
+    </header>
+  
+    
+    <div class="main">
+        <main>
+            <div class="carousel-inner">
+                <img src="/images/fancydog.jpg" class="d-block w-100" alt="...">
+                <h1>10 banhos sofistiqué </h1>
+                <h2>Por apenas R$259,90<BR>
+                *enquanto durarem os vouchers </h2>
+                <button type="button" class="btn btn-light">Comprar agora</button>
+                </div>
+                
+        
+
+        </main>
+        <main2>
+            <div class="text">
+                <h1>Produtos e Servicos</h1>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="card1">
+                  <div class="card">
+                    <img src="/images/banhopetimersao.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary">R$85,90<BR> Banho sofistiqué de imersão </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card2">
+                  <div class="card">
+                    <img src="/images/banhopet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <button type="button" class="btn btn-primary">R$109,90<BR> Hidratação dos pêlos</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card3">
+                  <div class="card">
+                    <img src="/images/banhocachorro2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary">R$69,90<BR> Banho express para limpeza cotidiana</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card4">
+                  <div class="card">
+                    <img src="/images/relax-dog.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary">R$179,90<BR> Banho com massagem</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main2>  
+    
+    </div>
+     
+     <footer>
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Produtos</h5>
+                    <ul class="nav flex-column">
+                        <li class="na-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Hidratante</a>
+                        </li>
+                        <li class="na-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Shampoo</a>
+                        </li>
+                        <li class="na-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted">Ração</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                        <h5>Serviços</h5>
+                        <ul class="nav flex-column">
+                            <li class="na-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Banho e Tosa</a>
+                            </li>
+                            
+                        </ul>
+                </div>
+        </footer>
+     </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>

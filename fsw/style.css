@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Actor', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 25%;
+    cursor: pointer;
+}
+.carrinho button , .conta button, .search button, .mobile-menu-icon button{
+    width: 5%;
+    background-color: white;
+    border: none;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-item{
+    color:black;
+    margin: 0 15px;
+    padding-right:30px;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: black;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .menu {
+        padding: 1.5rem 4rem;
+    }
+
+    .menu-item{
+        display: none;
+
+    }
+    .conta{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .menu-item{
+        display: block;
+        padding-top: 1.2rem;
+
+    }
+
+    .mobile-menu .conta {
+        display: block;
+        padding-top: 1rem 2rem;
+    }
+
+    .mobile-menu .conta button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+.main{
+    width: 100%;
+}
+
+.carousel-inner {
+    display: inline-block;
+    position: relative;
+  }
+  .carousel-inner h1 {
+    position: absolute;
+    top: 300px;
+    right: 400px;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .carousel-inner h2 {
+    position: absolute;
+    top: 400px;
+    right: 400px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: white;
+  }
+  .carousel-inner button {
+    position: absolute;
+    top: 500px;
+    right: 700px;
+    
+  }
+  
+  .text h1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+ .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+  .card1, .card2, .card3, .card4 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 300px;
+  }
+
+  .card1 img, .card2 img, .card3 img, .card4 img {
+    width: 100%; /* Define a largura da imagem para 100% da largura do card */
+    height: 200px; /* Mantém a proporção original da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do card */
+  }
+
+  .card1 button, .card2 button, .card3 button, .card4 button {
+    width: 100%; /* Define a largura da imagem para 100% da largura do card */
+    height: 85px; /* Mantém a proporção original da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do card */
+  }
+ 
+  footer{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+  footer h5{
+    color: white;
+  }
+  footer li{
+    color:white;
+}
+
+
+/*
+A partir daqui esta a estilizacao do formulario de cadastro
+*/
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 10px; /* Espaçamento inferior entre os campos */
+  }
+  
+  /* Ajuste o estilo das etiquetas (labels) */
+  .form-label {
+    font-weight: bold;
+    margin-left:5%;
+    margin-top: 15px;
+  }
+  
+  /* Remova a borda padrão dos campos de entrada quando focados */
+  .form-control:focus {
+    border-color: #007bff; /* Cor da borda quando o campo está focado (opcional) */
+    box-shadow: none; /* Remova a sombra ao focar (opcional) */
+  }
+  .form-control{
+    width:90%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+
+  }
+  form{
+    background-color: lightgray;
+    width: 50%;
+    padding: 30px;
+    max-width: 35%;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    ;
+
+      }
+.btn-primary {
+        background-color: black;
+        color: white;
+        border-color: black;
+        width:90%;
+        margin-left:5%;
+
+    }
+/*
+A partir daqui esta a estilizacao do agendamento
+*/
+
+.btn-primary agendarBtn {
+  background-color: black;
+  color: white;
+  border-color: black;
+  width:90%;
+  margin-left:5%;
+
+}

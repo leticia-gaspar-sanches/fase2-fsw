@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../bootstrap-5.3.1-dist/js"
+		},
+		{
+			"path": "../bootstrap-5.3.1-dist/css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Fundamentos Sistema Web"
+	}
+}
